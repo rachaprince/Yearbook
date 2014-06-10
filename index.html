@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <title></title>
+    <style type="text/css">
+
+    body {
+    	background-color: #62E200;
+    	font-family: 'Dosis'; sans-serif;
+    }
+        .container {
+        	width: 660px;
+        	margin: 0px auto;
+        	border: 1px solid black;
+        	position:relative;
+        	display: flex;
+        	flex-direction:row;
+        	flex-wrap:wrap;
+        	
+        }
+
+        .pic {
+        	z-index:0;
+        	height: 200px;
+        	width: 218px;
+        
+  		
+        	display: inline-block;
+    		position: relative;
+        	border: 1px solid #95002B;
+
+        }
+
+        .description {
+        	background-color: #E60042;
+        	padding: 5px;
+        	
+
+        }
+        .picture {
+        	position: absolute;
+        	height: 100%;
+        	width: 100%;
+        	top: 0px;
+        	left:0px;
+        	background-size: cover;
+        	background-position: center;
+        	border-radius: 2em;
+        }
+
+        .pic:hover > .picture {
+        	postion:absolute;
+        	z-index:3;
+        	-webkit-transform: rotateZ(-15deg) translateX(-85%) translateY(10%);
+        	-webkit-box-shadow: 9px 11px 14px 0px rgba(50, 50, 50, 0.75);
+
+        }
+
+        .pic:hover > .description {
+        	-webkit-transform: rotateZ(5deg) scale(1.1) translateX(20%) translateY(10%);
+
+        }
+
+        .pic:hover ~ .pic {
+        	z-index: -1;
+        }
+    
+
+    	h2 {
+    	text-align: center;
+    	}
+    	</style>
+</head>
+
+<body>
+ <h2> This is a header. The following is a calendar of my past years in pictures. I'd explain more but I'm tired. </h2>
+	<div class="container">
+
+		<div  class="pic">
+			<div class="description">
+			<h1> January </h1>
+				<p> Here my friends and I celebrated the new year with what can only be the most attractive facial expressions in the world. 
+				</p>
+			</div>
+			<div class="picture" style="background-image: url(images/jan.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> February </h1>
+				<p> Apparently I took zero good pictures during February. But here is a blurry shot of my friends and I walking down New York. Yay photography. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/feb.jpg);" >
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> March</h1>
+			<p> Meaningful trip with a meaningful group of people. Not tagged in this photo: The bajillion mosquitos also present. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/mar.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> April </h1>
+				<p> This picture doesn't belong in April, but my April pic went MIA. And who doesn't love family? </p>
+			</div>
+			<div class="picture" style="background-image: url(images/april.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> May </h1>
+				<p> One my friends from high school and I chillin before a UCSD dance. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/may.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> June </h1>
+			<p>  Hiking and stuff </p>
+			</div>
+			<div class="picture" style="background-image: url(images/june.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> July </h1>
+				<p> This is my best friend. She is almost as crazy as I am. Almost. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/july.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> August </h1>
+				<p> My co-worker Nancy. No one worked da grill like Nancy. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/aug.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			
+			<div class="description">
+			<h1> September </h1>
+				<p> I was inducted into D-port with mardi-gra beads and glasses. Go Gnome or Go Home. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/sept.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description" >
+			<h1> October </h1>
+			<p> D-port crew before the inagural ball. The exact details are fuzzy but I recall lots of bluegrass music. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/oct.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description">
+			<h1> November </h1>
+				<p> This picture was taken moments before my soul was crushed by the Harvard-Yale Game.  </p>
+			</div>
+			<div class="picture" style="background-image: url(images/nov.jpg);">
+			</div>
+		</div>
+
+		<div  class="pic">
+			<div class="description">
+			<h1> December </h1>
+				<p> Freshman Christmas Dinner here. This event evolved way too much food. </p>
+			</div>
+			<div class="picture" style="background-image: url(images/dec.jpg);">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
